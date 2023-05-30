@@ -47,7 +47,7 @@ function build_sdl_mixer {
 }
 
 function build_fluidsynth {
-	git clone https://github.com/EtherTyper/fluidsynth-lite.git
+	git clone https://github.com/ftp27/fluidsynth-lite.git
 	pushd fluidsynth-lite
 	sed -i '.txt' 's/DLL"\ off/DLL"\ on/' CMakeLists.txt
 	# if building fluidsynth fails, move on without it
